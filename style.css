@@ -28,14 +28,16 @@ header {
     border-radius: 16px;
     color: #ff8400;
     margin-top: 25px;
-    padding: 8px;
+    padding: 1.2vw;
     opacity: 95%;
     
 }
 
 .menu-left {
+    display: flex;
     margin-left: 1.8%;
     transition: transform 0.1s ease-in-out;
+    align-items: center;
 }
 
 .menu-body {
@@ -43,9 +45,11 @@ header {
 }
 
 .menu-right {
+    display: flex;
     align-content: center;
     margin-right: 1.8%;
-    
+    margin: auto;
+    align-items: center;
 
 }
 
@@ -55,7 +59,7 @@ header {
     background-color: #343434;
     color: #ff8400;
     font-size: 1.8vw;
-    padding: 5px;
+    padding: 15px;
 }
 
 
@@ -63,7 +67,7 @@ header {
     border-radius: 8px;
     background-color: #ff8400;
     border: 0;
-    padding: 10px;
+    padding: 1.2vw;
     font-size: 1.8vw;
     color: #fdffff;
     margin-top: 2%;

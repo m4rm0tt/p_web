@@ -9,6 +9,10 @@ h1 {
     font-family: alphabet-soup-pro, sans-serif;
 }
 
+h2 {
+    font-family: alphabet-soup-pro, sans-serif;    
+}
+
 button {
     font-family: "corsario-variable",sans-serif;
 }
@@ -101,7 +105,7 @@ header {
     flex-direction: column;
 }
 
-.section {
+.section2 {
     display: flex;
     background-color: #343434;
     width: 90%;
@@ -114,9 +118,30 @@ header {
 .Ttexte {
     font-size: 6vw;
     margin: 0px;
+    text-shadow: 1px 30px 10px black;
 }
 
-.arrow {
-    margin-top: 40px;
+.sous_titre {
+    margin-left: 5%;
+    margin-top: 3%;
+    font-family: alphabet-soup-pro, sans-serif;
     font-size: 4vw;
+    text-shadow: 3px 3px black;
+}
+.sous_titre2 {
+    flex: 1;
+}
+.sous_titre3 {
+    width: 1vw;
+    display: flex;
+    background-color: #343434;
+    width: 40%;
+    height: 90%;
+    margin-top: 1%;
+    margin-right: 3%;
+    border-radius: 16px;
+    background-image: url(/img/photo_gnt.avif);
+    background-size: cover;
+    background-position: center;
+    align-self: center;
 }

@@ -4,6 +4,12 @@ body {
     font-family: "corsario-variable",sans-serif;
 }
 
+.texte {
+    color: #fdffff;
+    font-family: "corsario-variable",sans-serif;
+    font-size: 14px;
+}
+
 h1 {
     font-size: 40px;
     font-family: alphabet-soup-pro, sans-serif;
@@ -23,6 +29,11 @@ header {
     margin-right: 5%;
     position: sticky;
     top: 0;
+}
+
+a {
+        text-decoration: none;
+        color: #fdffff;
 }
 
 .menu {
@@ -144,4 +155,35 @@ header {
     background-size: cover;
     background-position: center;
     align-self: center;
+}
+
+#video-fond {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#video-fond video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+#nyan {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    
 }

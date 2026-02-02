@@ -10,6 +10,10 @@ body {
     font-size: 14px;
 }
 
+main {
+    margin-top: 6%;
+}
+
 h1 {
     font-size: 40px;
     font-family: alphabet-soup-pro, sans-serif;
@@ -179,11 +183,10 @@ a {
   object-fit: cover;
 }
 
-#nyan {
-    width: auto;
-    height: auto;
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    
+.nyan-section {
+    background-image: url(nyan-cat-gif-1.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;   
 }

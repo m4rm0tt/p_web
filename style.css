@@ -1,12 +1,12 @@
 body {
     background-color: #676767;
     color: #fdffff;
-    font-family: "corsario-variable",sans-serif;
+    font-family: "corsario-variable", sans-serif;
 }
 
 .texte {
     color: #fdffff;
-    font-family: "corsario-variable",sans-serif;
+    font-family: "corsario-variable", sans-serif;
     font-size: 14px;
 }
 
@@ -20,14 +20,14 @@ h1 {
 }
 
 h2 {
-    font-family: alphabet-soup-pro, sans-serif;    
+    font-family: alphabet-soup-pro, sans-serif;
 }
 
 button {
-    font-family: "corsario-variable",sans-serif;
+    font-family: "corsario-variable", sans-serif;
 }
 
-header {
+.header-home {
     height: 75px;
     margin-left: 5%;
     margin-right: 5%;
@@ -35,9 +35,15 @@ header {
     top: 0;
 }
 
+.header-contact {
+    height: 75px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 a {
-        text-decoration: none;
-        color: #fdffff;
+    text-decoration: none;
+    color: #fdffff;
 }
 
 .menu {
@@ -49,7 +55,7 @@ a {
     margin-top: 25px;
     padding: 1.2vw;
     opacity: 95%;
-    
+
 }
 
 .menu-left {
@@ -91,10 +97,10 @@ a {
     color: #fdffff;
     margin-top: 2%;
     margin-bottom: 2%;
-    
+
 }
 
-.menu-left:hover{
+.menu-left:hover {
     transform: scale(1.2);
 }
 
@@ -143,9 +149,11 @@ a {
     font-size: 4vw;
     text-shadow: 3px 3px black;
 }
+
 .sous_titre2 {
     flex: 1;
 }
+
 .sous_titre3 {
     width: 1vw;
     display: flex;
@@ -162,25 +170,25 @@ a {
 }
 
 #video-fond {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
 }
 
 #video-fond video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
 }
 
 .nyan-section {
@@ -188,5 +196,42 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;   
+    min-height: 100vh;
+}
+
+input[type=text], input[type=date], input[type=time], input[type=number], input[type=tel], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-hero, .contact-form {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+fieldset {
+    margin-bottom: 4vh;
+    background-color: #343434;
+    border-radius: 10px;
+}
+
+.submit{
+    display: flex;
+    margin-top: 2vh;
+    justify-self: center;
+    padding: 2vh;
+    border-radius: 10px;
+    border-style: none;
+    text-decoration: underline;
+    background-color: #ff8400;
+}
+
+.checkbox{
+    display: flex;
+    justify-self: center;
 }

@@ -4,6 +4,10 @@ body {
     font-family: "corsario-variable", sans-serif;
 }
 
+textarea {
+    resize: none;
+}
+
 .texte {
     color: #fdffff;
     font-family: "corsario-variable", sans-serif;
@@ -31,8 +35,6 @@ button {
     height: 75px;
     margin-left: 5%;
     margin-right: 5%;
-    position: sticky;
-    top: 0;
 }
 
 .header-contact {
@@ -199,17 +201,27 @@ a {
     min-height: 100vh;
 }
 
-input[type=text], input[type=date], input[type=time], input[type=number], input[type=tel], input[type=email], select, textarea {
+input[type=text],
+input[type=date],
+input[type=time],
+input[type=number],
+input[type=tel],
+input[type=email],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 4px;
     box-sizing: border-box;
+    border-radius: 0.5rem;
+    box-shadow: 2.5px 3px 0 #000;
+
 }
 
-.contact-hero, .contact-form {
+.contact-hero,
+.contact-form {
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -220,7 +232,7 @@ fieldset {
     border-radius: 10px;
 }
 
-.submit{
+.submit {
     display: flex;
     margin-top: 2vh;
     justify-self: center;
@@ -231,7 +243,7 @@ fieldset {
     background-color: #ff8400;
 }
 
-.checkbox{
+.checkbox {
     display: flex;
     justify-self: center;
 }

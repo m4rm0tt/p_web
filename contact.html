@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,12 @@
     <link rel="stylesheet" href="https://use.typekit.net/wgc8fqs.css">
     <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
     <div id="video-fond">
-    <video src="Design sans titre.mp4" id="mavideo" autoplay muted loop playsinline></video>
+        <video src="Design sans titre.mp4" id="mavideo" autoplay muted loop playsinline></video>
     </div>
-    
+
     <header class="header-contact">
         <nav class="menu">
             <div class="menu-left">
@@ -42,24 +44,24 @@
 
                     <label for="full-name">Nom et prénom</label>
                     <input id="full-name" name="full_name" type="text" placeholder="Ex. Mhin Tranne" required>
-                    
+
                     <br>
 
                     <label for="company">Société (optionnel)</label>
                     <input id="company" name="company" type="text" placeholder="Ex. Nestlé">
-                    
+
                     <br>
-                    
+
                     <label for="email">Email</label>
                     <input id="email" name="email" type="email" placeholder="mhin.tranne@mhin.tranne" required>
-                    
+
                     <br>
-                    
+
                     <label for="phone">Téléphone</label>
                     <input id="phone" name="phone" type="tel" placeholder="+41 79 693 97 07" required>
-                    
+
                     <br>
-                    
+
                     <label for="contact-preference">Préférence de contact</label>
                     <select id="contact-preference" name="contact_preference" required>
                         <option value="">Choisir</option>
@@ -67,7 +69,7 @@
                         <option value="phone">Téléphone</option>
                         <option value="whatsapp">WhatsApp</option>
                     </select>
-                </fieldset> 
+                </fieldset>
 
                 <fieldset>
                     <legend>Détails de l'événement</legend>
@@ -83,34 +85,34 @@
                         <option value="festival">Festival / Open air</option>
                         <option value="other">Autre</option>
                     </select>
-                    
+
                     <br>
-                    
+
                     <label for="event-date">Date de l'événement</label>
                     <input id="event-date" name="event_date" type="date" required>
-                    
+
                     <br>
-                    
+
                     <label for="start-time">Heure de début</label>
                     <input id="start-time" name="start_time" type="time" required>
-                    
+
                     <br>
-                    
+
                     <label for="end-time">Heure de fin</label>
                     <input id="end-time" name="end_time" type="time" required>
-                    
+
                     <br>
-                    
+
                     <label for="guests">Nombre d'invités</label>
                     <input id="guests" name="guests" type="number" min="10" max="5000" placeholder="Ex. 120" required>
-                    
+
                     <br>
-                    
+
                     <label for="location">Lieu de l'événement</label>
                     <input id="location" name="location" type="text" placeholder="Ville, adresse, salle" required>
-                    
+
                     <br>
-                    
+
                     <label for="budget">Budget estimé</label>
                     <input id="budget" name="budget" type="text" placeholder="Ex. 900 - 1400 €">
                 </fieldset>
@@ -119,10 +121,11 @@
                     <legend>Ambiance & besoins techniques</legend>
 
                     <label for="music-style">Style(s) musical(aux)</label>
-                    <input id="music-style" name="music_style" type="text" placeholder="Ex. House, Techno, etc..." required>
-                    
+                    <input id="music-style" name="music_style" type="text" placeholder="Ex. House, Techno, etc..."
+                        required>
+
                     <br>
-                    
+
                     <label for="dj-set">Format de prestation</label>
                     <select id="dj-set" name="dj_set" required>
                         <option value="">Choisir</option>
@@ -130,9 +133,9 @@
                         <option value="dj-mc">DJ + MC</option>
                         <option value="dj-sax">DJ + sax</option>
                     </select>
-                    
+
                     <br>
-                    
+
                     <label for="equipment">Matériel sur place</label>
                     <select id="equipment" name="equipment" required>
                         <option value="">Choisir</option>
@@ -152,7 +155,9 @@
                     <legend>Message</legend>
 
                     <label for="message">Détails supplémentaires</label>
-                    <textarea id="message" name="message" rows="6" placeholder="Décrivez l'ambiance souhaitée, vos contraintes, ou toute info utile." required></textarea>
+                    <textarea id="message" name="message" rows="6"
+                        placeholder="Décrivez l'ambiance souhaitée, vos contraintes, ou toute info utile."
+                        required></textarea>
                 </fieldset>
 
                 <label class="checkbox">
@@ -161,8 +166,10 @@
                 </label>
 
                 <button type="submit" class="submit">Envoyer la demande</button>
+
             </form>
         </section>
     </main>
 </body>
+
 </html>

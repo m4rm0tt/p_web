@@ -60,3 +60,18 @@
   margin-right: 0.5rem;
   color: #ff8400;
 }
+
+@media screen and (max-width: 768px) {
+  .card {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  .price {
+    font-size: 2.2rem;
+  }
+}

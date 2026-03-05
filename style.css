@@ -5,6 +5,10 @@ body {
     margin: 0;
 }
 
+li {
+    list-style: none;
+}
+
 textarea {
     resize: none;
 }
@@ -37,7 +41,7 @@ fieldset {
 }
 
 footer {
-    background-color: #676767;
+    background-color: #343434;
     height: 100px;
     position: relative;
     margin-top: 3%;
@@ -174,7 +178,6 @@ a {
 .sous_titre2 {
     display: flex;
     flex: 1;
-    justify-content: center;
     align-items: center;
 }
 
@@ -257,6 +260,41 @@ textarea {
     margin-right: 5%;
 }
 
+.contact-photo {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3vh;
+    background-color: #343434;
+    border-radius: 10px;
+    padding: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2vh;
+}
+
+.presentation-moi {
+    background-color: #343434;
+    border-radius: 10px;
+    padding: 2vh;
+}
+
+.photo-moi {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.presentation-moi h2 {
+    margin-top: 0;
+    margin-bottom: 1vh;
+}
+
+.presentation-moi p {
+    margin: 0;
+}
+
 fieldset {
     margin-bottom: 4vh;
     background-color: #343434;
@@ -279,25 +317,191 @@ fieldset {
     justify-self: center;
 }
 
+#dj1{
+    height: 20vw;
+    border-radius: 100%;
+
+    margin-left: 4vh;
+}
+
+#dj2{
+    height: 20vw;
+    border-radius: 100%;
+}
+
 .list_dj {
-    list-style-type: none;
-    text-align:center;
-    margin-right: 30%;
+    display: flex;
 }
 
-.dj {
-    padding: 200%;
-    margin-bottom: 3%;
-    border-radius: 10000000000px;
-    background-size: cover;
-    background-position: center;
+.dj-name {
+    align-self: center;
+    padding: 1vh;
+    font-size: 3vh;
+
+
 }
 
-#dj1 {
-    background-image: url(img/Image\ \(1\).jfif);
-    
+.h1-service {
+    margin-left: 4%;
 }
 
-#dj2 {
-    background-image: url(img/Image\ \(2\).jfif);
+@media screen and (max-width: 768px) {
+    main {
+        margin-top: 28px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .header-home,
+    .header-contact {
+        height: auto;
+    }
+
+    .menu {
+        flex-direction: row;
+        align-items: center;
+        padding: 12px;
+        gap: 6px;
+    }
+
+    .menu-body {
+        display: block;
+        flex: 1;
+    }
+
+    .menu-right {
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+        gap: 6px;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    .Bcontact,
+    .Bservices {
+        font-size: 14px;
+        padding: 8px;
+        white-space: nowrap;
+    }
+
+    .accueil {
+        font-size: 22px;
+    }
+
+    .titre,
+    .section2 {
+        height: auto;
+        min-height: 260px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .section2 {
+        flex-direction: column;
+    }
+
+    .Ttexte {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .sous_titre,
+    .sous_titre_right {
+        font-size: 30px;
+        text-align: left;
+        margin: 0;
+    }
+
+    .sous_titre3 {
+        width: 100%;
+        height: 220px;
+        margin: 15px 0 0 0;
+    }
+
+    footer {
+        height: auto;
+        padding: 16px;
+    }
+
+    .list_dj {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #dj1,
+    #dj2 {
+        height: 140px;
+        margin-left: 0;
+    }
+
+    .dj-name {
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .section2:last-of-type .sous_titre_right {
+        order: -1;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    .section2:last-of-type .sous_titre2 {
+        width: 100%;
+        display: block;
+    }
+
+    .section2:last-of-type .list_dj {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        align-items: start;
+        column-gap: 12px;
+        row-gap: 8px;
+    }
+
+    .section2:last-of-type .list_dj li:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .section2:last-of-type .list_dj li:nth-child(2) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .section2:last-of-type .list_dj li:nth-child(3) {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .section2:last-of-type .list_dj li:nth-child(4) {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .contact-photo {
+        flex-direction: column;
+    }
+
+    .photo-moi {
+        width: 140px;
+        height: 140px;
+    }
+
+    .presentation-moi {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 3vh;
+    }
+
+    .checkbox {
+        justify-self: stretch;
+    }
 }
